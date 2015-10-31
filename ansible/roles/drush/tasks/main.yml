@@ -1,7 +1,0 @@
-- name: Install Drush
-  shell: composer require drush/drush:dev-master
-  args:
-    creates: vendor/bin/drush
-
-- name: Export vendor path
-  lineinfile: dest=/home/vagrant/.bashrc line="export PATH=\"$HOME/vendor/bin:$PATH\""
