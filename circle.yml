@@ -19,4 +19,4 @@ dependencies:
 
 test:
   override:
-      - php bin/behat
+      - bin/behat
