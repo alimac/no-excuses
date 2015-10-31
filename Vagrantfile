@@ -58,7 +58,7 @@ Vagrant.configure("2") do |config|
       if [[ ! -f /vagrant/cnf/settings.php ]]; then
         cp /vagrant/config/local.settings.php /vagrant/config/settings.php
       fi
-      su vagrant -c 'cd /vagrant && build/install.sh;'
+      su vagrant -c 'cd /vagrant && composer install && build/install.sh;'
 SCRIPT
 
 end
