@@ -17,6 +17,7 @@ dependencies:
   post:
     - sudo chown -R $(whoami):www-data www
     - build/install.sh
+    - curl http://localhost
 
 test:
   override:
