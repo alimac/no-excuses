@@ -1,0 +1,36 @@
+{
+    "name": "alimac/no-excuses",
+    "description": "Following No Excuses blog series on http://craychee.io",
+    "type": "project",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Alina Mackenzie",
+            "email": "hello@alim.ac"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/drupal": "8.0.0",
+        "drupal/features": "8.3.0-alpha4",
+        "craychee/rootcanal": "dev-master"
+
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "bin/rootcanal"
+        ],
+        "post-update-cmd": [
+            "bin/rootcanal"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packagist.drupal-composer.org/"
+        }
+    ]
+}
