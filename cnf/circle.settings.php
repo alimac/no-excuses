@@ -9,3 +9,5 @@ $databases=array('default' => array(
         'host' => '127.0.0.1',
     ),
 ),);
+$drupal_hash_salt='161302b5bf927369e7c370212318c8f1837b03bbecb94eadb9eeed17a7875d1e';
+require_once DRUPAL_ROOT . '/sites/default/vendor/autoload.php';
