@@ -56,7 +56,7 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder "./", "/vagrant", type: "nfs"
     config.vm.provision :shell, inline: <<SCRIPT
       if [[ ! -f /vagrant/cnf/settings.php ]]; then
-        cp /vagrant/config/local.settings.php /vagrant/config/settings.php
+        cp /vagrant/cnf/local.settings.php /vagrant/cnf/settings.php
       fi
       su vagrant -c 'cd /vagrant && composer install && build/install.sh;'
 SCRIPT
