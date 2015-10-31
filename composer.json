@@ -13,6 +13,8 @@
     "require": {
         "craychee/rootcanal": "dev-master",
         "drupal/drupal": "8.0.0",
+        "drupal/drupal-extension": "~3.0",
+        "drupal/drush": "8.6.0",
         "drupal/features": "8.3.0-alpha4"
 
     },
