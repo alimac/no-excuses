@@ -12,7 +12,7 @@ dependencies:
     - sudo service apache2 restart
     - cp cnf/circle.settings.php cnf/settings.php
   override:
-    - composer install --prefer-source --no-interaction
+    - composer install --prefer-dist
   post:
     - sudo chown -R $(whoami):www-data www
     - build/install.sh
